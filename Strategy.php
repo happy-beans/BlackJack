@@ -3,6 +3,7 @@
 
   Class Strategy {
 
+    const LV1 = 1;
     /**
      * 手札の状況から次をめくるかどうかを判定。
      *
@@ -16,7 +17,7 @@
 
       $ret = false;
       switch($level) {
-        case 1:
+        case self::LV1:
           $ret = self::level1($player);
         default:
           break;
