@@ -85,5 +85,5 @@
      }
   }
   /**
-   * Copyright 2017 fukumame
+   * Copyright 2017 happy-beans / fukumame
    */

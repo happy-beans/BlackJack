@@ -8,5 +8,5 @@
     public const SUITS = array(self::SPADE, self::HEART, self::CRUB, self::DIAMOND);
   }
   /**
-   * Copyright 2017 fukumame
+   * Copyright 2017 happy-beans / fukumame
    */

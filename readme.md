@@ -1,4 +1,8 @@
 ## BlackJack
+#### 0. 開発環境
+  - macOS 10.12.6
+  - php7.2.0(beta3)
+
 #### 1. 起動
   $ php BlackJack.php
 
@@ -28,6 +32,8 @@
 | Strategy.php | Strategy | Dealer がカードをめくるかどうかを判断 |
 | Suit.php | Suit | トランプのSuitを定義 |
 
-
 #### 4. history
   - 2017.09.20 初版作成
+
+#### 5. ひとこと
+  php コーディングによるサンプルソース。
