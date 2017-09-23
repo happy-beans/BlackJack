@@ -62,20 +62,20 @@
       system("clear");
       $this->showMsg(self::START);
 
-      print($this->getWhiteSpace(2).$this->dealer->toMaskedString().PHP_EOL);
+      print(self::getWhiteSpace(2).$this->dealer->toMaskedString().PHP_EOL);
       $this->runUser();
       $this->runDealer();
 
       foreach($this->players as $player) {
         $ret = $this->dealer->judge($player);
         if ($ret > 0) {
-          print($this->getWhiteSpace(2).$this->getMessage($player, self::LOSES).PHP_EOL);
+          print(self::getWhiteSpace(2).$this->getMessage($player, self::LOSES).PHP_EOL);
         }
         elseif ($ret < 0) {
-          print($this->getWhiteSpace(2).$this->getMessage($player, self::WINS).PHP_EOL);
+          print(self::getWhiteSpace(2).$this->getMessage($player, self::WINS).PHP_EOL);
         }
         else {
-          print($this->getWhiteSpace(2).self::DRAW.PHP_EOL);
+          print(self::getWhiteSpace(2).self::DRAW.PHP_EOL);
         }
       }
       $this->showMsg(self::END);
@@ -97,10 +97,10 @@
       // user
       foreach ($this->players as $player) {
         while (true) {
-          print($this->getWhiteSpace(2).$player->toString().PHP_EOL);
+          print(self::getWhiteSpace(2).$player->toString().PHP_EOL);
 
           while (true) {
-            print($this->getWhiteSpace(4).self::HIT_OR_STAND);
+            print(self::getWhiteSpace(4).self::HIT_OR_STAND);
             $ans = trim(fgets(STDIN));
 
             // 'h(it)'
@@ -108,9 +108,9 @@
             if (preg_match("/^[hH]$/", $ans)) {
               $this->dealer->deal($player);
               print(PHP_EOL);
-              print($this->getWhiteSpace(2).$player->toString().PHP_EOL);
+              print(self::getWhiteSpace(2).$player->toString().PHP_EOL);
               if ($player->isBurst()) {
-                print($this->getWhiteSpace(4).$this->getMessage($player, self::BURSTS).PHP_EOL);
+                print(self::getWhiteSpace(4).$this->getMessage($player, self::BURSTS).PHP_EOL);
                 break 2;
               }
             }
@@ -127,15 +127,15 @@
 
     private function runDealer() {
 
-      print($this->getWhiteSpace(2).$this->dealer->toString().PHP_EOL);
+      print(self::getWhiteSpace(2).$this->dealer->toString().PHP_EOL);
       while(true) {
         if (Strategy::hasNext($this->dealer, 1)) {
-          print($this->getWhiteSpace(4).$this->getMessage($this->dealer, self::HITS).PHP_EOL);
+          print(self::getWhiteSpace(4).$this->getMessage($this->dealer, self::HITS).PHP_EOL);
           $this->dealer->deal($this->dealer);
           print(PHP_EOL);
-          print($this->getWhiteSpace(2).$this->dealer->toString().PHP_EOL);
+          print(self::getWhiteSpace(2).$this->dealer->toString().PHP_EOL);
           if ($this->dealer->isBurst()) {
-            print($this->getWhiteSpace(4).$this->getMessage($this->dealer, self::BURSTS).PHP_EOL);
+            print(self::getWhiteSpace(4).$this->getMessage($this->dealer, self::BURSTS).PHP_EOL);
             break;
           }
         }
