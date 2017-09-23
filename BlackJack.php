@@ -5,8 +5,7 @@
   require_once(__dir__."/Strategy.php");
   /** - - - - - - - - - - - - - - - - - - - - - - - - - - - -
    *  BlackJack CUI用コントローラ
-   *  開発・実行環境：macOS10.12.6
-   *  php7.2.0(beta3)
+   *  開発・実行環境：macOS 10.12.6 / php7.2.0(beta3)
    *  - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
   $ctrl = new Controller();
   $ctrl->run();
