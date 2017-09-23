@@ -1,12 +1,17 @@
 ## BlackJack
-#### 0. 開発環境
+#### 0. ライセンス
+ * Copyright 2017 happy-beans / fukumame
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+
+#### 1. 開発環境
   - macOS 10.12.6
   - php7.2.0(beta3)
 
-#### 1. 起動
+#### 2. 起動
   $ php BlackJack.php
 
-#### 2. ルール
+#### 3. ルール
   1. ゲームを起動すると、Player と Dealer にカードが２枚ずつ配られる。
   2. Dealer に配られた１枚めのカードと手札を見て、もう一枚もらう(hit)かもらわない(stand) かどうかを画面に従って入力。
   3. 点数については以下の通り。
@@ -21,7 +26,7 @@
     - Player の点数 = Dealer の点数 : ドローゲーム
   7. ゲームが１回終了するとアプリは終了する。対戦結果は保持されない。
 
-#### 3. Class
+#### 4. Class
 | ファイル名 | Class | 説明 |
 |:------|:----|:----|
 | BlackJack.php | Controller | CUI 上でのゲーム進行管理 |
@@ -32,8 +37,9 @@
 | Strategy.php | Strategy | Dealer がカードをめくるかどうかを判断 |
 | Suit.php | Suit | トランプのSuitを定義 |
 
-#### 4. history
+#### 5. history
   - 2017.09.20 初版作成
 
-#### 5. ひとこと
-  php コーディングによるサンプルソース。
+#### 6. ひとこと
+  - php コーディングによるサンプルソース。
+  - 当該ソースはここのurl(https://github.com/happy-beans/BlackJack)にしか掲載していません。他のところで

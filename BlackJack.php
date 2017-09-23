@@ -1,4 +1,10 @@
 <?php
+/**
+ * BlackJack.php
+ * Copyright 2017 happy-beans / fukumame
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
 
   require_once(__dir__."/Dealer.php");
   require_once(__dir__."/Player.php");
@@ -175,6 +181,3 @@
       return str_pad("", $size, " ");
     }
   }
-  /**
-   * Copyright 2017 happy-beans / fukumame
-   */

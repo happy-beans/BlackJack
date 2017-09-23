@@ -1,4 +1,10 @@
 <?php
+/**
+ * Player.php
+ * Copyright 2017 happy-beans / fukumame
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
   require_once(__dir__."/Card.php");
 
   Class Player {
@@ -84,6 +90,3 @@
        return $this->deck[$index]->toShortString();
      }
   }
-  /**
-   * Copyright 2017 happy-beans / fukumame
-   */

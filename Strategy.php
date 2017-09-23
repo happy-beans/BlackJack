@@ -1,4 +1,10 @@
 <?php
+/**
+ * Strategy.php
+ * Copyright 2017 happy-beans / fukumame
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
   require_once(__dir__."/Player.php");
 
   Class Strategy {
@@ -34,6 +40,3 @@
       return ($player->getScore() <= 16) ? true : false;
     }
   }
-  /**
-   * Copyright 2017 happy-beans / fukumame
-   */

@@ -1,5 +1,10 @@
 <?php
-
+/**
+ * Card.php
+ * Copyright 2017 happy-beans / fukumame
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
   require_once(__dir__."/Suit.php");
 
   Class Card {
@@ -74,6 +79,3 @@
       return substr($this->suit, 0, 1).$a[$this->number];
     }
   }
-  /**
-   * Copyright 2017 happy-beans / fukumame
-   */

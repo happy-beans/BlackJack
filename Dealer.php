@@ -1,4 +1,10 @@
 <?php
+/**
+ * Dealer.php
+ * Copyright 2017 happy-beans / fukumame
+ * This software is released under the MIT License.
+ * http://opensource.org/licenses/mit-license.php
+ */
   require_once(__dir__."/CardSet.php");
   require_once(__dir__."/Player.php");
 
@@ -71,6 +77,3 @@
       return sprintf($format, $this->name, $this->getCardIndexOf(0));
     }
   }
-  /**
-   * Copyright 2017 happy-beans / fukumame
-   */
