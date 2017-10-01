@@ -42,4 +42,4 @@
 
 #### 6. ひとこと
   - php コーディングによるサンプルソース。
-  - 当該ソースはここのurl(https://github.com/happy-beans/BlackJack)にしか掲載していません。他のところで
+  - 当該ソースはここのurl[https://github.com/happy-beans/BlackJack]にしか掲載していません。
